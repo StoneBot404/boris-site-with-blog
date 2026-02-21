@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/nav_icon.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <link rel="stylesheet" href="style.css?v=2">
+    <title>Boris GANGUE's Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__container container">
+            <h1>Boris<span>'s Portfolio</span></h1>
+            <div class="nav__links">
+                <a data-target="home" class="scroll-link active">Home</a>
+                <a data-target="projects" class="scroll-link">Projects</a>
+                <a data-target="blog" class="scroll-link">Blog</a>
+                <a data-target="contact" class="scroll-link">Contact</a>
+                <!--<a data-target="timeline" class="scroll-link">Timeline</a>-->
+            </div>
+            <button class="nav__menu"><i class="uil uil-apps"></i></button>
+        </div>
+        <!--<div class="nav__notification">Website under construction</div>-->
+    </nav>
+    <!--========================================= Menu Overlay =======================================-->
+    <section class="menu-overlay__section">
+        <div class="menu-overlay__container container">
+            <div class="menu-overlay__header">
+                <div>
+                    <h3>My toolbox</h3>
+                    <button class="close__btn"><i class="uil uil-times"></i></button>
+                </div>
+                <p>Practical tools I created for fun!</p>        
+            </div>
+            <div class="menu-overlay__grid">
+                <div class="menu-overlay__box">
+                    <a href="https://borisgangue.dev" class="box"><i class="uil uil-house-user"></i></a>
+                    <h3>Home</h3>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="others/Gangue_Boris_resume.pdf" class="box" target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-postcard"></i>
+                    </a>
+                    <h3>Resume</h3>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="https://gangueboris.github.io/SortingVisualizer/" class="box" target="_blank"><i class="uil uil-align-center"></i></a>
+                    <h3>SortVisual</h3>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="https://gangueboris.github.io/AnimeQuiz-FrontEnd/" class="box" target="_blank"><i class="fas fa-question-circle"></i></a>
+                    <h3>AnimeQuiz</h3>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="posts/openclaw-experiment.html" class="box"><i class="fas fa-robot"></i></a>
+                    <h3>OpenClaw XP</h3>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="#" class="box"></i></a>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="#" class="box"></a> 
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="#" class="box"></a>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="#" class="box"></a>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="#" class="box"></a>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="#" class="box"></a>
+                </div>
+                <div class="menu-overlay__box">
+                    <a href="#" class="box"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!--========================================= Profile Badge =======================================-->
+    <canvas id="background-canvas" data-engine="three.js r160"></canvas>
+    <section class="badge__section scroll-section" id="home">
+        <div class="badge">
+            <div class="badge__container">
+                <img class="badge__profile" src="images/boris_profile.jpg" alt="Profile Image">
+                <div class="badge__info">
+                    <div class="badge__info-title">
+                        <h1>Boris Gangue</h1>
+                        <p>Engineering Student at ISEN | Future Software Engineer</p>
+                    </div>
+                    <div class="badge__content">
+                        <div class="badge__content-info">
+                            <span>Email:</span><a href="mailto:gangueboris@gmail.com">gangueboris@gmail.com</a>
+                            <br>
+                            <span>LinkedIn: </span><a href="https://www.linkedin.com/in/boris-gangue-48a146285/" target="_blank">/in/borisgangue</a>
+                            <br>
+                            <span>Github: </span><a href="https://github.com/gangueboris" target="_blank">/gangueboris</a>
+                        </div>
+                        <div class="badge__qrcode">
+                        <img src="images/qrcode.png" alt="qrcode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--==============================================  JUMPING =======================================-->
+    <i class="uil uil-angle-down jumping-icon"></i>
+    </section>
+
+
+    <!--==============================================  CATEGORIES =======================================-->
+    <section class="categories  scroll-section" id="projects">
+       <div class="categories__container container">
+          <!--<div class="categories__list">
+            <button>All</button>
+            <button>Challenge</button>
+            <button>Web app</button>
+            <button>Game dev</button>
+            <button>IA</button>
+          </div>-->
+          <div class="categories__recent">
+            <button> <i class="uil uil-arrow-down"></i>  most recent first</button>
+          </div>
+       </div> 
+    </section>
+    <!--==============================================  PROJECTS =======================================-->
+    <section class="projects scroll-section" id="projects">
+        <div class="projects__container container">
+            <!--============== PROJECTS - 2025 ================-->
+            <div class="projects__2025 projects__">
+                <h1>2025</h1>
+                <div class="projects__content">
+                    <div class="project">
+                        <div class="project__header">
+                             <h2>PhotoVoltaïc</h2>
+                             <a href="https://github.com/gangueboris/Projet_CIR2" target="_blank">
+                                <i class="uil uil-github"></i>
+                             </a>
+                         </div>
+                         <div class="project__info">
+                             <div>
+                                 <div class="project__info-category">FullStack</div>
+                                 <div class="project__info-category">Database</div>
+                                 <div class="project__info-category">Maps</div>
+                                 <div class="project__info-category">Team work</div>
+                                 <div class="project__info-category">Problem solving</div>
+                             </div>
+                             <p>
+                                From a CSV database of solar panel installations, we developed an application to manage photovoltaic installations in private homes.
+                            </p>
+                         </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__header">
+                             <h2>Route-Planner</h2>
+                             <a href="https://github.com/gangueboris/Route-Planner" target="_blank">
+                                <i class="uil uil-github"></i>
+                             </a>
+                         </div>
+                         <div class="project__info">
+                             <div>
+                                 <div class="project__info-category">Qt</div>
+                                 <div class="project__info-category">Mysql</div>
+                                 <div class="project__info-category">Graphs</div>
+                                 <div class="project__info-category">Problem solving</div>
+                                 <div class="project__info-category">Team work</div>
+                             </div>
+                             <p>
+                                Based on the database data, we have drawn a map of western France and implemented a system
+                                that allows us to find the shortest path between two cities and access Wikipedia information about any city.
+                            </p>
+                         </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__header">
+                             <h2>AnimeQuiz</h2>
+                             <a href="https://gangueboris.github.io/AnimeQuiz-FrontEnd/" target="_blank">
+                                <i class="uil uil-external-link-alt"></i>
+                             </a>
+                         </div>
+                         <div class="project__info">
+                             <div>
+                                 <div class="project__info-category">Angular</div>
+                                 <div class="project__info-category">Java</div>
+                                 <div class="project__info-category">SpringBoot</div>
+                                 <div class="project__info-category">FullStack</div>
+                                 <div class="project__info-category">Quiz</div>
+                                 <div class="project__info-category">Challenge</div>
+                             </div>
+                             <p>
+                                This project was built to deepen my understing in fullStack. From developement,
+                                the front-end (Angular), the back-end (Spring Boot) to deployement (Github-pages & Render).
+                                What do you think of the result? 😏
+                            </p>
+                         </div>
+                    </div>
+                </div>  
+             </div>
+ 
+            
+
+            <!--============== PROJECTS - 2024 ================-->
+           <div class="projects__2024 projects__">
+               <h1>2024</h1>
+               <div class="projects__content">
+                    <div class="project">
+                        <div class="project__header">
+                            <h2>Break The Code 2024</h2>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7264351110356766720/" target="_blank">
+                                <i class="uil uil-info-circle"></i>
+                            </a>
+                        </div>
+                        <div class="project__info">
+                            <div>
+                                <div class="project__info-category">Problem</div>
+                                <div class="project__info-category">Team working</div>
+                                <div class="project__info-category">Problem solving</div>
+                                <div class="project__info-category">Team working</div>
+                                <div class="project__info-category">Problem solving</div>
+                                <div class="project__info-category">Team working</div>
+                            </div>
+                            <p>My team and I successfully won the Break The Code 2024 problem-solving challenge organized by Sopra Steria</p>
+                        </div>
+                        <div class="first-place-container">
+                            <span>1st Place</span>
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__header">
+                            <h2>Advent of Code 2024</h2>
+                            <a href="https://github.com/gangueboris/AoC_/tree/main/AoC_24" target="_blank">
+                                <i class="uil uil-github"></i>
+                            </a>  
+                        </div>
+                        <div class="project__info">
+                            <div>
+                                <div class="project__info-category">Problem solving</div>
+                                <div class="project__info-category">C++</div>
+                            </div>
+                            <p>Advent of Code is an annual event held from December 1 to 25, where two problems are given each day for participants to solve. I use them to practice C++</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__header">
+                            <h2>Blog</h2>
+                            <a href="https://github.com/gangueboris/blogWebApp"><i class="uil uil-github"></i></a>
+                        </div>
+                        <div class="project__info">
+                            <div>
+                                <div class="project__info-category">HTML</div>
+                                <div class="project__info-category">CSS</div>
+                                <div class="project__info-category">Js</div>
+                                <div class="project__info-category">PHP</div>
+                                <div class="project__info-category">MySql</div>
+                                <div class="project__info-category">CRUD</div>
+                            </div>
+                            <p>This is a personal project. After completing courses in PHP and MySQL, I challenged myself to see what I could build</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__header">
+                            <h2>CRAO 2024</h2>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7253350245781123072/?actorCompanyId=9229191" target="_blank">
+                                <i class="uil uil-info-circle"></i>
+                            </a>
+                        </div>
+                        <div class="project__info">
+                            <div>
+                                <div class="project__info-category">Communication</div>
+                                <div class="project__info-category">formation</div>
+                                <div class="project__info-category">Team</div>
+                            </div>
+                            <p>CRAO stands for Congrès Régional d'Automne Ouest. I joined to receive training and learn more about the Junior Entrepreneur movement</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__header">
+                            <h2>Family tree generator</h2>
+                            <a href="https://github.com/gangueboris/PROJET_CIR1_V2" target="_blank">
+                                <i class="uil uil-github"></i>
+                            </a>
+                        </div>
+                        <div class="project__info">
+                            <div>
+                                <div class="project__info-category">Problem solving</div>
+                                <div class="project__info-category">Datastructures</div>
+                                <div class="project__info-category">Algorithms</div>
+                                <div class="project__info-category">C</div>
+                                <div class="project__info-category">HTML</div>
+                                <div class="project__info-category">CSS</div>
+                                <div class="project__info-category">Linux</div>
+                            </div>
+                            <p>After completing courses on data structures and algorithms, this project was assigned to us (a team of three) at the end of my first year at ISEN</p>
+                        </div>
+                    </div>
+               </div>  
+            </div>
+
+           <!--============== PROJECTS - 2023 ================-->
+           <div class="projects__2023 projects__">
+                <h1>2023</h1>
+                <div class="projects__content">
+                    <div class="project">
+                        <!--<iframe src="https://gangueboris.github.io/SortingVisualizer/" class="sort_visualizer__iframe" title="Embedded Webpage" height="450px" width="400px"></iframe>-->
+                        <div class="project__header">
+                            <h2>Sort Visualizer</h2>
+                            <a href="https://gangueboris.github.io/SortingVisualizer/" target="_blank">
+                                <i class="uil uil-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project__info">
+                            <div>
+                                <div class="project__info-category">Problem solving</div>
+                                <div class="project__info-category">Algorithms</div>
+                                <div class="project__info-category">HTML</div>
+                                <div class="project__info-category">CSS</div>
+                                <div class="project__info-category">Js</div>
+                            </div>
+                            <p>
+                                Sorting algorithms are instructions for arranging items in order, like numbers from smallest to largest, made easy to understand through hands-on comparison 😁!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__header">
+                            <h2>SDL Roachy Game </h2>
+                            <a href="https://github.com/gangueboris/Roachy-SdlGame" target="_blank">
+                                <i class="uil uil-github"></i>
+                            </a>
+                        </div>
+                        <div class="project__info">
+                            <div>
+                                <div class="project__info-category">Algorithms</div>
+                                <div class="project__info-category">C</div>
+                                <div class="project__info-category">SDL</div>
+                                <div class="project__info-category">Linux</div>
+                            </div>
+                            <p>First start with UI in C using SDL library</p>
+                        </div>
+                    </div>
+                   
+                    <div class="project">
+                        <div class="project__header">
+                            <h2>Advent of Code 2023</h2>
+                            <a href="https://github.com/gangueboris/AoC_/tree/main/AoC_23" target="_blank">
+                                <i class="uil uil-github"></i>
+                            </a>  
+                        </div>
+                        <div class="project__info">
+                            <div>
+                                <div class="project__info-category">Problem solving</div>
+                                <div class="project__info-category">Python</div>
+                            </div>
+                            <p>I started practicing to enhance my problem-solving skills</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!--==============================================  BLOG SECTION =======================================-->
+    <section class="blog-section scroll-section" id="blog">
+        <div class="container">
+            <h1>Blog</h1>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <a href="posts/openclaw-experiment.html" class="blog-card">
+                    <div class="blog-card__image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="blog-card__content">
+                        <div class="blog-card__meta">
+                            <span><i class="uil uil-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="uil uil-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-card__title">From Chatbot to Digital Partner: My Experiment with OpenClaw</h3>
+                        <p class="blog-card__excerpt">
+                            I turned an old PC into a secure AI sandbox to test the limits of "Agentic AI." From automating job searches to building games and self-hosting search engines, see how Stone Bot evolved from a chatbot into a proactive co-worker.
+                        </p>
+                        <div class="blog-card__footer">
+                            Read Article <i class="uil uil-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==============================================  FOOTER =======================================-->
+    <footer>
+        <div class="footer__container container  scroll-section" id="contact">
+            <h2>Boris Gangue<span>'s Portfolio</span></h2>
+            <ul>
+                <li>Contact</li>
+                <li><a href="mailto:gangueboris@gmail.com"><i class="uil uil-envelope"></i> gangueboris@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/boris-gangue-48a146285/" target="_blank"><i class="uil uil-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/gangueboris" target="_blank"><i class="uil uil-github"></i> Github</a></li>
+                <li><a href="https://discord.com/users/gang_boris" target="_blank"><i class="uil uil-discord"></i> Discord</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script >
+        
+// Get elements
+// == Navbar == //
+const navbar = document.querySelector("nav");
+const projectHeader = document.querySelector(".project__header");
+const projectInfo = document.querySelector(".project__info");
+const body = document.querySelector("body");
+const scrollLinks = document.querySelectorAll('.scroll-link');
+const scrollSections = document.querySelectorAll('.scroll-section');
+
+// == ToolBox == //
+const navMenu = document.querySelector(".nav__menu");
+const toolBox = document.querySelector(".menu-overlay__section");
+const toolBoxCloseBtn = document.querySelector(".close__btn");
+
+
+// ======================= NAV BACKGROUND TRANSPARENT ====================================
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");  // Add class when scrolling down
+    }else{
+        navbar.classList.remove("scrolled");  // Remove class when scrolling up
+    }
+});
+
+
+
+// ======================= TOOLBOX OVERLAY ====================================
+navMenu.addEventListener("click", () => {
+    toolBox.classList.toggle('active');
+    body.classList.toggle('no-scroll');
+});
+
+toolBoxCloseBtn.addEventListener("click", () => {
+    toolBox.classList.remove('active');
+    body.classList.remove('no-scroll');
+});
+
+ // Close the menu when clicking outside
+ toolBox.addEventListener('click', (e) => {
+    if (e.target === toolBox){
+        toolBox.classList.remove('active');
+        body.classList.remove('no-scroll');
+    }
+  });
+
+// Handle scrolling to a section
+scrollLinks.forEach((link) => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor link behavior
+    /*========== SMOOTH =========*/
+    // Get the target id from the data-target attribute
+    const targetId = this.getAttribute('data-target');
+
+    // Find the target element
+    const targetElement = document.getElementById(targetId);
+
+    // Scroll to the target element smoothly
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    /*========== ACTIVE LINK =========*/
+    // Remove the active class from all links
+    scrollLinks.forEach((l) => l.classList.remove('active'));
+
+    // Add the active class to the clicked link
+    this.classList.add('active');
+  });
+});
+
+/* === Function to update active link based on scroll position ===*/
+function updateActiveLink() {
+  let current = '';
+
+  // Loop through sections to find the one in view
+  scrollSections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    if (window.scrollY >= sectionTop - (sectionHeight / 3)) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  // Update the active class
+  scrollLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('data-target') === current) {
+      link.classList.add('active');
+    }
+  });
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', updateActiveLink);
+
+
+  
+    /*============ Three.js background =================*/
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({
+        canvas: document.getElementById('background-canvas'),
+        alpha: true
+    });
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+
+    const geometry = new THREE.BufferGeometry();
+    const particles = 2000;
+    const positions = new Float32Array(particles * 3);
+
+    for(let i = 0; i < particles * 3; i += 3) {
+        positions[i] = (Math.random() - 0.5) * 10;
+        positions[i + 1] = (Math.random() - 0.5) * 10;
+        positions[i + 2] = (Math.random() - 0.5) * 10;
+    }
+
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    const material = new THREE.PointsMaterial({
+        color: 0x98F595, // Default UI green
+        size: 0.02
+    });
+
+    const points = new THREE.Points(geometry, material);
+    scene.add(points);
+
+    camera.position.z = 5;
+
+    // Color transition functions
+    function getColoredElements() {
+        const coloredElements = document.querySelectorAll('[class^="color-"]');
+        return Array.from(coloredElements).map(el => ({
+            element: el,
+            rect: el.getBoundingClientRect(),
+            color: window.getComputedStyle(el).color
+        }));
+    }
+
+    function rgbToHex(rgb) {
+        const match = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+        if (!match) return 0x98F595;
+
+        const r = parseInt(match[1]);
+        const g = parseInt(match[2]);
+        const b = parseInt(match[3]);
+
+        return (r << 16) | (g << 8) | b;
+    }
+
+    let targetColor = new THREE.Color(0x98F595);
+    let isTouch = false;
+
+    // Handle color updates
+    function updateParticleColor(event) {
+        if (isTouch) return;
+
+        const mouseX = event.clientX;
+        const mouseY = event.clientY + window.scrollY;
+        const elements = getColoredElements();
+
+        let closestDist = Infinity;
+        let closestColor = 0x98F595;
+
+        elements.forEach(({element, rect, color}) => {
+            const elementX = rect.left + rect.width/2;
+            const elementY = rect.top + rect.height/2;
+
+            const dist = Math.sqrt(
+                Math.pow(mouseX - elementX, 2) +
+                Math.pow(mouseY - elementY, 2)
+            );
+
+            if (dist < closestDist) {
+                closestDist = dist;
+                closestColor = rgbToHex(color);
+            }
+        });
+
+        targetColor = new THREE.Color(closestColor);
+    }
+
+    // Animation loop
+    function animate() {
+        requestAnimationFrame(animate);
+
+        // Smooth color transition
+        material.color.lerp(targetColor, 0.05);
+
+        points.rotation.x += 0.001;
+        points.rotation.y += 0.001;
+        renderer.render(scene, camera);
+    }
+
+    animate();
+
+    </script>
+</body>
+</html>  
